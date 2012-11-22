@@ -2,12 +2,14 @@
 <html>
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MyFirstBootStrap</title>
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <style>
-    body {
+    div#content {
       padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
     }
   </style>
@@ -33,8 +35,66 @@
     </div>
   </div>
   <div class="container">
-    <h1>Bootstrap starter template</h1>
-    <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+    <div id="content">
+      <h1>Bootstrap starter template</h1>
+      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>title</th>
+            <th>artist</th>
+            <th>albumartist</th>
+            <th>album</th>
+            <th>year</th>
+            <th>track</th>
+            <th>genre</th>
+            <th>disk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#">Deliberation</a></td>
+            <td>Katatonia</td>
+            <td></td>
+            <td>The Great Cold Distance</td>
+            <td>2006</td>
+            <td>2 of 0</td>
+            <td>Modern Doom</td>
+            <td>0 of 0</td>
+          </tr>
+          <tr>
+            <td><a href="#">Tiny Dancer</a></td>
+            <td>Elton John</td>
+            <td></td>
+            <td>Live In Australia With The Melbourne Symphony Orchestra</td>
+            <td>1987</td>
+            <td>8 of 0</td>
+            <td>Rock,Rock</td>
+            <td>0 of 0</td>
+          </tr>
+          <tr>
+            <td><a href="#">MsHeyou's Piano Cover While My Guitar Gently Weeps</a></td>
+            <td>MsHeyou</td>
+            <td></td>
+            <td></td>
+            <td>0</td>
+            <td>0 of 0</td>
+            <td>Other</td>
+            <td>0 of 0</td>
+          </tr>
+          <tr>
+            <td><a href="#">Weak And Powerless</a></td>
+            <td>A Perfect Circle</td>
+            <td>A Perfect Circle</td>
+            <td>Thirteenth Step</td>
+            <td>2003</td>
+            <td>2 of 0</td>
+            <td>Rock</td>
+            <td>0 of 0</td>
+          </tr>
+        <tbody>
+      </table>
+    </div>
   </div>
 </body>
 </html>
