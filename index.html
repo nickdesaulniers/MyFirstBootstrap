@@ -9,6 +9,22 @@
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <style>
+    /* http://elvery.net/demo/responsive-tables/ */
+    @media only screen and (max-width: 800px) {
+      table td:nth-child(5),
+      table th:nth-child(5),
+      table td:nth-child(6),
+      table th:nth-child(6),
+      table td:nth-child(8),
+      table th:nth-child(8){display: none;}
+    }
+
+    @media only screen and (max-width: 640px) {
+      table td:nth-child(3),
+      table th:nth-child(3),
+      table td:nth-child(7),
+      table th:nth-child(7) {display: none;}
+    }
     div#content {
       padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
     }
@@ -34,11 +50,11 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div id="content">
       <h1>Bootstrap starter template</h1>
       <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
-      <table>
+      <table class="table table-striped">
         <thead>
           <tr>
             <th>title</th>
